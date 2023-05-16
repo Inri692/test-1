@@ -20,3 +20,29 @@ interface DataCard2 {
 export const Card2 = ({ image }: DataCard2) => {
   return <img className="w-20 h-20 mt-2" src={image} />;
 };
+
+interface DataCard3 {
+  image: string;
+  isi: string;
+  name: string;
+  judul: string;
+}
+export const Card3 = ({ name, image, isi, judul }: DataCard3) => {
+  return (
+    <div className="w-96 h-96 bg-white shadow-md rounded-xl border-2 border-[#FFCE07]  ">
+      <img className="w-full h-52 " src={image} />
+      <div className="m-3">
+        <p className="text-[#C4C4C4] ">{judul}</p>
+        <h1 className="text-xl font-bold text-black">{name}</h1>
+        <p>{isi}</p>
+      </div>
+    </div>
+  );
+};
+
+interface DataCard4 {
+  image: string;
+}
+export const Card4 = ({ image }: DataCard4) => {
+  return <img className="w-44 h-44 mt-2" src={image} />;
+};

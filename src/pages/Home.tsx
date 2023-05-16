@@ -1,10 +1,15 @@
 import { Card1 } from "../components/Card";
 import { Card2 } from "../components/Card";
+import { Card3 } from "../components/Card";
+import { Card4 } from "../components/Card";
+
 import Layout from "../components/Layout";
 import gambar1 from "../assets/gambar1.jpeg";
 // import dot1 from "../assets/dot1.jpeg";
 // import dot2 from "../assets/dot2.jpeg";
 
+import softwares from "../utils/dataSoftware";
+import clients from "../utils/dataClient";
 import products from "../utils/dataSet";
 import techs from "../utils/dataTech";
 
@@ -390,7 +395,7 @@ const Home = () => {
           ))}
         </div>
       </div>
-      <div className="bg-black h-36 text-white">
+      <div className="bg-black h-44 text-white">
         <div className="grid justify-items-center text-[#FFCE07] text-2xl m-6">
           <h1>Our Progress Comes With a Collabration Between</h1>
           <span>Creativity, Ideas, and Technology</span>
@@ -409,6 +414,117 @@ const Home = () => {
             <div className="">web development</div>
           </div>
         </div>
+      </div>
+      <div>
+        <div className="grid justify-items-center text-[#C4C4C4]">
+          <p>portfolio</p>
+        </div>
+        <div className="grid justify-items-center text-[#272727] text-xl font-bold drop-shadow-2xl">
+          <h1 className="">The software that we build</h1>
+          <span>takes our clients to next level</span>
+        </div>
+        <div className="grid grid-cols-3 justify-items-center gap-5">
+          {softwares.map((item) => (
+            <Card3
+              key={item.id}
+              image={item.image}
+              judul={item.judul}
+              name={item.name}
+              isi={item.isi}
+            />
+          ))}
+        </div>
+        <div className="grid justify-items-center text-black m-10">
+          <button className="rounded-full bg-[#FFCE07] w-44 h-16 font-bold">
+            Learn more
+          </button>
+        </div>
+      </div>
+      <div className="relative">
+        <div className="grid justify-items-center text-[#C4C4C4]">
+          <p>Testimonials</p>
+        </div>
+        <div className="grid justify-items-center text-[#272727] text-4xl font-bold drop-shadow-2xl static">
+          <div className="absolute">
+            <h1 className="">What clients love in working</h1>
+            <span className="grid justify-items-center">
+              with Albatech Team
+            </span>
+          </div>
+        </div>
+        <div className="bg-[url('./public/bg.jpeg')] h-screen bg-no-repeat bg-contain bg-center static">
+          <div className="absolute left-32 top-36 ">
+            <p className="text-[#272727] text-4xl font-bold">Amazing people</p>
+            <p className="text-[#272727] text-2xl w-1/2">
+              "They are people who are not only following the tasks, but can
+              work as a team. Together."
+            </p>
+            <div className="flex flex-row ">
+              <div className="w-14 h-14 rounded-full bg-[#C4C4C4]"></div>
+              <div className="flex flex-col mx-5">
+                <p>Matthijs Plest</p>
+                <p className="text-[#C4C4C4]">COO at WietaaltWat</p>
+              </div>
+            </div>
+          </div>
+          <div className="inline-block absolute right-0 top-1/4">
+            <p className="text-[#272727] text-sm font-bold">Amazing people</p>
+            <p className="text-[#272727] text-sm w-1/2">
+              "They are people who are not only following the tasks, but can
+              work as a team. Together."
+            </p>
+
+            <div className="flex flex-col text-sm mt-4">
+              <p>Matthijs Plest</p>
+              <p className="mt-2 text-[#C4C4C4]">COO at WietaaltWat</p>
+            </div>
+          </div>
+          <div className="absolute left-36 top-1/2 ">
+            <p className="text-[#272727] text-sm font-bold">Amazing people</p>
+            <p className="text-[#272727] text-sm w-1/2">
+              "They are people who are not only following the tasks, but can
+              work as a team. Together."
+            </p>
+
+            <div className="flex flex-col text-sm mt-4">
+              <p>Matthijs Plest</p>
+              <p className="mt-2 text-[#C4C4C4]">COO at WietaaltWat</p>
+            </div>
+          </div>
+          <div className="absolute right-20 top-2/4 ">
+            <p className="text-[#272727] text-5xl font-bold">
+              Partnership approach
+            </p>
+            <p className="text-[#272727] text-2xl w-96">
+              "We felt like we had a true partner throughout the process. They
+              wew clearly interested on our long -term success."
+            </p>
+            <div className="flex flex-row ">
+              <div className="w-14 h-14 rounded-full bg-[#C4C4C4]"></div>
+              <div className="flex flex-col mx-5">
+                <p>Matthijs Plest</p>
+                <p className="text-[#C4C4C4]">COO at WietaaltWat</p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute left-1/4 top-3/4 ">
+            <p className="text-[#272727] text-sm font-bold">Amazing people</p>
+            <p className="text-[#272727] text-sm w-1/2">
+              "They are people who are not only following the tasks, but can
+              work as a team. Together."
+            </p>
+
+            <div className="flex flex-col text-sm mt-4">
+              <p>Matthijs Plest</p>
+              <p className="mt-2 text-[#C4C4C4]">COO at WietaaltWat</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="grid grid-cols-5 mx-6 justify-items-center gap-1">
+        {clients.map((items) => (
+          <Card4 key={items.id} image={items.image} />
+        ))}
       </div>
     </Layout>
   );
