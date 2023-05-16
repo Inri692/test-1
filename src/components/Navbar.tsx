@@ -1,12 +1,6 @@
 import React from "react";
 
 const Navbar: React.FC = () => {
-  // const [open, setOpen] = useState(false);
-
-  // const toggleMenu = () => {
-  //   setOpen(!open);
-  // };
-
   return (
     <div className="navbar h-20 bg-white shadow-sm sticky top-0 z-50 flex flex-row ">
       <div className="navbar-start basis-1/4 px-20">
