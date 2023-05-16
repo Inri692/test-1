@@ -1,10 +1,12 @@
 import { Card1 } from "../components/Card";
+import { Card2 } from "../components/Card";
 import Layout from "../components/Layout";
 import gambar1 from "../assets/gambar1.jpeg";
 // import dot1 from "../assets/dot1.jpeg";
 // import dot2 from "../assets/dot2.jpeg";
 
 import products from "../utils/dataSet";
+import techs from "../utils/dataTech";
 
 const Home = () => {
   return (
@@ -380,6 +382,11 @@ const Home = () => {
               name={item.name}
               isi={item.isi}
             />
+          ))}
+        </div>
+        <div className="grid grid-cols-6 mx-6 justify-items-center gap-1">
+          {techs.map((items) => (
+            <Card2 key={items.id} image={items.image} />
           ))}
         </div>
       </div>

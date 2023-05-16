@@ -13,3 +13,10 @@ export const Card1 = ({ name, image, isi }: DataCard1) => {
     </div>
   );
 };
+
+interface DataCard2 {
+  image: string;
+}
+export const Card2 = ({ image }: DataCard2) => {
+  return <img className="w-20 h-20 mt-2" src={image} />;
+};
