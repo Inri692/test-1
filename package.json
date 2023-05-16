@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
+    "daisyui": "^2.51.6",
+    "fs-js": "^1.0.6",
     "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
