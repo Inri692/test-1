@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar: React.FC = () => {
   return (
-    <div className="navbar h-20 bg-white shadow-sm sticky top-0 z-50 flex flex-row ">
+    <div className="navbar h-20 shadow-sm sticky top-0 flex flex-row ">
       <div className="navbar-start basis-1/4 px-20">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -104,7 +104,9 @@ const Navbar: React.FC = () => {
         </ul>
       </div>
       <div className="navbar-end basis-1/4 px-20 ">
-        <a className="btn">Contact Us</a>
+        <button className="rounded-full bg-[#FFCE07] w-36 h-12 font-bold">
+          Contact Us
+        </button>
       </div>
     </div>
   );
