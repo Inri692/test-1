@@ -4,8 +4,8 @@ import axios from "axios";
 
 function Login() {
   const [password, setPassword] = useState<string>("");
-  const [email, setEmail] = useState<string>("");
-  const [token, setToken] = useState<string>("");
+  const [, setEmail] = useState<string>("");
+  const [, setToken] = useState<string>("");
   const [error, setError] = useState<string>("");
   const navigate = useNavigate();
 
@@ -22,7 +22,7 @@ function Login() {
         localStorage.setItem("token", response.data.token);
         navigate("/profile");
       })
-      .catch((error) => {
+      .catch(() => {
         setError("Invalid email or password");
       });
   }
