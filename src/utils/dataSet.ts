@@ -40,8 +40,7 @@ const products: Product[] = [
     id: 6,
     name: "Integrated payment gateway ",
     isi: "Simplify the payment system with just one step",
-    // image: "public/Payment.svg",
-    image: "public/alba-logo.svg",
+    image: "public/Payment.svg",
   },
 ];
 

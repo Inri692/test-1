@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <footer className="footer p-10 bg-white text-[#272727] border-t">
         <div className="mt-4">
           <img src={logo} alt="" />
-          <p className="w-96">
+          <p className="lg:w-96 sm:w-64">
             Albatech acts as a corporate partner to help digitize their business
             to accelerate trends in remote work.
           </p>

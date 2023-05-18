@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
+    "axios": "^1.4.0",
     "daisyui": "^2.51.6",
     "fs-js": "^1.0.6",
     "postcss-cli": "^10.1.0",
